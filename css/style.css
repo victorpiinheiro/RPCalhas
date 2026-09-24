@@ -458,6 +458,24 @@ nav {
 .gallery-item img { width: 98%; height: 98%; object-fit: cover; transition: transform .35s ease; border-radius: 4px; }
 .gallery-item:hover img { transform: scale(1.06); }
 
+/* Selo "N fotos" nos cartões que reúnem várias fotos da mesma obra */
+.gallery-badge {
+  position: absolute;
+  top: 10px; left: 10px;
+  padding: 4px 10px;
+  background: rgba(15,16,16,.78);
+  border: 1px solid rgba(240,120,0,.55);
+  border-radius: 999px;
+  color: #fff;
+  font-family: var(--display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
 .gallery-overlay {
   position: absolute;
   inset: 0;
@@ -551,8 +569,18 @@ nav {
   line-height: 1;
 }
 .lightbox-close:hover { opacity: 1; }
+.lightbox-counter {
+  margin-top: 12px;
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--brand-orange);
+  letter-spacing: .1em;
+}
+.lightbox-counter:empty { display: none; }
+.lightbox.single .lightbox-nav { display: none; }
 .lightbox-caption {
-  margin-top: 14px;
+  margin-top: 6px;
   font-family: var(--display);
   font-size: 13px;
   font-weight: 700;
@@ -728,7 +756,10 @@ footer {
   .section { padding: 64px 0; }
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
-  .lightbox-prev, .lightbox-next { display: none; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+  .lightbox-nav { background: rgba(15,16,16,.6); }
+  .gallery-badge { top: 6px; left: 6px; padding: 2px 7px; font-size: 9px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-label{font-size: 8px;}
