@@ -45,6 +45,17 @@ const galleryData = [
     ],
   },
   {
+    title: 'Calhas em aço galvanizado — Área gourmet',
+    category: 'calhas',
+    photos: [
+      { src: 'assets/calha-area-gourmet-02.jpeg', label: 'Calhas em aço galvanizado — Vista geral da área gourmet' },
+      { src: 'assets/calha-area-gourmet-03.jpeg', label: 'Calha em aço galvanizado — Telhado em L' },
+      { src: 'assets/calha-area-gourmet-04.jpeg', label: 'Calha em aço galvanizado — Acabamento de canto interno' },
+      { src: 'assets/calha-area-gourmet-01.jpeg', label: 'Calha em aço galvanizado — Área gourmet ao entardecer' },
+      { src: 'assets/condutor-area-gourmet-01.jpeg', label: 'Calha e condutor pluvial em aço galvanizado — Detalhe' },
+    ],
+  },
+  {
     title: 'Rufos de muro em aço galvanizado',
     category: 'rufos',
     photos: [
